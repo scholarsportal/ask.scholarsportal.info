@@ -1,5 +1,6 @@
 /*!
  * Custom CSS
+replace this: #d45028e6
  */
 
 body {
@@ -24,7 +25,7 @@ a {
 
 a:focus,
 a:hover {
-    color: #23527c;
+    color: #b04120;
 }
 
 .btn-primary {
@@ -74,8 +75,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #2c7eaa;
-    background-color: #2c7eaa;
+    border-color: #d45028e6;
+    background-color: #d45028e6;
 }
 
 .btn-xl.disabled,
@@ -139,7 +140,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #2c7eaa;
+    color: #d45028e6;
 }
 
 .navbar-default .navbar-toggle {
@@ -161,7 +162,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
-    color: #2c7eaa;
+    color: #d45028e6;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -170,7 +171,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    background-color: #2c7eaa;
+    background-color: #d45028e6;
 }
 
 section#headtext {
