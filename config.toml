@@ -1,6 +1,6 @@
 # Site settings
 #baseurl = "http://localhost/ask-public/public/"
-#baseurl = "https://staticdev.scholarsportal.info/ask-public/"
+baseurl = "https://staticdev.scholarsportal.info/ask-public/"
 title = "Ask A Librarian"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
@@ -37,6 +37,16 @@ googleAnalytics = ""
     # Link custom assets relative to /static
     custom_css = ["css/custom.css"]
     custom_js  = []
+	favicon    = "favicon.ico"
+
+	# Possibility to disable external/additional fonts
+	# Exception: Fontawesome
+	disableFonts = false
+
+	# 404 error customization
+	[params.error404]
+	heading = "Page couldn't be found"
+	text = "Please visit [this page](/)"
 
 
 	# Navigation
@@ -73,8 +83,8 @@ googleAnalytics = ""
 	[params.hero]
 		# To change the background image of the hero, replace 'header-bg.jpg' in
 		# the 'static/img' folder.
-		title = "Ask A Librarian"
-		subtitle = "Connecting students, faculty and researchers from your school with chat research assistance."
+		title = "Ask a Librarian"
+		subtitle = "Connecting users with research assistance through chat."
 		buttonText = "Tell me more"
 
 		[[params.hero.logo]]
@@ -82,7 +92,7 @@ googleAnalytics = ""
 
 
 	[params.headtext]
-	enable = false
+	enable = true
 		description = "Ask a Librarian is a collaborative virtual reference service that connects students, faculty and researchers from participating libraries across Ontario with real-time research assistance through chat in English and French."
 
 	# Benefits section
@@ -93,24 +103,24 @@ googleAnalytics = ""
 
         [[params.services.row]]
 
+            [[params.services.row.list]]
+                icon = "fa-clock-o"
+                title = "Extended hours"
+                description = "Ask a Librarian is available 67 hours per week during the academic year, including on evenings and weekends."
+
 			[[params.services.row.list]]
-                icon = "fa-map"
-                title = "Availability"
+                icon = "fa-map-marker"
+                title = "Available anywhere"
                 description = "Ask a Librarian provides online, on-demand assistance from the library website, allowing users to get help immediately no matter where they are."
 
             [[params.services.row.list]]
-                icon = "fa-clock-o"
-                title = "Service hours"
-                description = "Ask a Librarian is available 67 hours per week during the academic year, including on evenings and weekends."
-
-            [[params.services.row.list]]
                 icon = "fa-users"
-                title = "Expertise"
+                title = "Expert staff"
                 description = "Our expert staff are trained to provide local, trustworthy answers to library- and research-related questions."
 
 			[[params.services.row.list]]
                 icon = "fa-language"
-                title = "Bilingual"
+                title = "Bilingual service"
                 description = "Chat support is available in both English and French during all service hours."
 
     # Features section
@@ -318,6 +328,9 @@ googleAnalytics = ""
 		title = "Contact us"
 		subtitle  = "Get In Touch!"
 		buttonText = "Send message"
+
+		[params.contact.captcha]
+    	#sitekey = ""
 
 		# 'warning' defines error messages for invalid inputs
 		[params.contact.form.name]
