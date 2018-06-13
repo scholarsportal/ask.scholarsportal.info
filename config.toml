@@ -111,7 +111,7 @@ googleAnalytics = ""
 			[[params.services.row.list]]
                 icon = "fa-map-marker"
                 title = "Available anywhere"
-                description = "Ask a Librarian provides online, on-demand assistance from the library website, allowing users to get help immediately no matter where they are."
+                description = "Ask a Librarian provides online, on-demand assistance from the library website, allowing users to get immediate help no matter where they are."
 
             [[params.services.row.list]]
                 icon = "fa-users"
@@ -140,17 +140,17 @@ googleAnalytics = ""
 			description = "Ask a Librarian is powered by Nub Games’ [LibraryH3lp](https://libraryh3lp.com/), a flexible, scalable chat platform designed for libraries. LibraryH3lp has a simple, user-friendly interface, ample customization options, and a responsive customer support team. The platform has proactive chat functionality and offers unlimited knowledge bases and an optional add-on for text messaging."
 
 		[[params.about.events]]
-			img = ""
+			img = "training.png"
 			title = "Training"
 			description = "Scholars Portal offers a comprehensive training program for new chat operators. Sessions include an orientation to the service, hands-on training on the chat platform, a review of best practices for virtual reference and online communication, and an introduction to service policies and procedures."
 
 		[[params.about.events]]
-			img = ""
+			img = "support.png"
 			title = "Support"
 			description = "The Ask a Librarian service is coordinated by a designated Scholars Portal librarian, who supports local chat coordinators and manages daily operations, including scheduling, training, communications, assessment, and user support. The coordinator also maintains the chat software, liaises with Nub Games, and hires and supervises student and casual workers who contribute to the service."
 
 		[[params.about.events]]
-			img = ""
+			img = "impact.png"
 			title = "Impact"
 			description = "Participating libraries can track local service usage and operator activity through statistical reports available in the LibraryH3lp admin console. Exit survey results are also available to evaluate user satisfaction and service quality. The Ask a Librarian coordinator can assist with statistical tracking, custom reports, and assessment and evaluation projects."
 
