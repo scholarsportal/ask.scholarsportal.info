@@ -93,7 +93,7 @@ googleAnalytics = ""
 
 	[params.headtext]
 	enable = true
-		description = "Ask a Librarian is a collaborative virtual reference service that connects students, faculty and researchers from participating libraries across Ontario with real-time research assistance through chat in English and French."
+		description = "Ask a Librarian is a collaborative virtual reference service, offered in English and French, that connects students, faculty members, and researchers from participating university libraries across Ontario with real-time library and research assistance through chat. The service is offered by [Scholars Portal](https://scholarsportal.info), the digital service arm of the [Ontario Council of University Libraries](https://ocul.on.ca) (OCUL)."
 
 	# Benefits section
 	[params.services]
@@ -111,7 +111,7 @@ googleAnalytics = ""
 			[[params.services.row.list]]
                 icon = "fa-map-marker"
                 title = "Available anywhere"
-                description = "Ask a Librarian provides online, on-demand assistance from the library website, allowing users to get immediate help no matter where they are."
+                description = "Ask a Librarian provides online, on-demand assistance from your library website, allowing users to get immediate help no matter where they are."
 
             [[params.services.row.list]]
                 icon = "fa-users"
