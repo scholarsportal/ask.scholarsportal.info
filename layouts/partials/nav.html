@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand page-scroll" href="#page-top">
-				<img alt="OLRC Logo" src="img/{{ with .Site.Params.navigation.img }}{{ . | markdownify }}{{ end }}">
+				<img alt="Ask a Librarian Logo" src="{{ .Site.BaseURL }}img/{{ with .Site.Params.navigation.img }}{{ . | markdownify }}{{ end }}">
 			</a>
 
         </div>
@@ -80,6 +80,7 @@
                     <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
                 </li>
                 {{ end }}
+                <li class="translation"> {{ partial "translate.html" . }} </li>
             </ul>
         </div>
         {{ "<!-- /.navbar-collapse -->" | safeHTML }}

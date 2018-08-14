@@ -1,25 +1,14 @@
 # Site settings
 #baseurl = "http://localhost/ask-public/public/"
 baseurl = "https://staticdev.scholarsportal.info/ask-public/"
-title = "Ask A Librarian"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "false"
 
 [params]
-
-	# You can use Markdown syntax for urls [text](//url.to/source) or
-	# most longer texts.
-	#
-	# All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
-	# for more icons. The icons are represented by their corresponding
-	# CSS class.
-
-	# To provide some metadata for search engines feel free to add a few
-    # information about you and your website.
-	name = "Ask A Librarian"
-	description = "Ask a Librarian is a collaborative virtual reference service that connects students, faculty and researchers from participating libraries across Ontario with real-time research assistance through chat in English and French."
 
 	# Since this template is static, the contact form uses www.formspree.io as a
 	# proxy. The form makes a POST request to their servers to send the actual
@@ -43,176 +32,11 @@ googleAnalytics = ""
 	# Exception: Fontawesome
 	disableFonts = false
 
-	# 404 error customization
-	[params.error404]
-	heading = "Page couldn't be found"
-	text = "Please visit [this page](/)"
-
-
-	# Navigation
-	[params.navigation]
-		brand = "Ask A Librarian"
-		services = "Benefits"
-		about = "Features"
-		portfolio = "Statistics"
-		team = "Team"
-		clients_list = "Participants"
-		pricing = "Pricing"
-		faq = "FAQ"
-		contact = "Contact"
-		img = "logo_notext.png"
-
-    # Add custom links. Those can be pre- and postpended to the default menu above.
-    # Use the weight attribute to order your custom links. Uncomment the example
-    # below and replace the values with your own.
-
-    # prepended links
-    #[[menu.prepend]]
-    #    url = "#"
-    #    name = ""
-    #    weight = 10
-
-    # postpended links
-    [[menu.postpend]]
-        url = "https://spotdocs.scholarsportal.info/display/ASK"
-        name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
-        weight = 10
-
-
-	# Hero section
-	[params.hero]
-		# To change the background image of the hero, replace 'header-bg.jpg' in
-		# the 'static/img' folder.
-		title = "Ask a Librarian"
-		subtitle = "Connecting users with research assistance through chat."
-		buttonText = "Tell me more"
-
-		[[params.hero.logo]]
-			img = "logo.png"
-
-
-	[params.headtext]
-	enable = true
-		description = "Ask a Librarian is a collaborative virtual reference service, offered in English and French, that connects students, faculty members, and researchers from participating university libraries across Ontario with real-time library and research assistance through chat. The service is offered by [Scholars Portal](https://scholarsportal.info), the digital service arm of the [Ontario Council of University Libraries](https://ocul.on.ca) (OCUL)."
-
-	# Benefits section
-	[params.services]
-    enable = true
-		title = "Benefits"
-		subtitle = ""
-
-        [[params.services.row]]
-
-            [[params.services.row.list]]
-                icon = "fa-clock-o"
-                title = "Extended hours"
-                description = "Ask a Librarian is available 67 hours per week during the academic year, including on evenings and weekends."
-
-			[[params.services.row.list]]
-                icon = "fa-map-marker"
-                title = "Available anywhere"
-                description = "Ask a Librarian provides online, on-demand assistance from your library website, allowing users to get immediate help no matter where they are."
-
-            [[params.services.row.list]]
-                icon = "fa-users"
-                title = "Expert staff"
-                description = "Our expert staff are trained to provide local, trustworthy answers to library- and research-related questions."
-
-			[[params.services.row.list]]
-                icon = "fa-language"
-                title = "Bilingual service"
-                description = "Chat support is available in both English and French during all service hours."
-
-    # Features section
-	[params.about]
-    enable = true
-		title = "Features"
-		subtitle = ""
-		endpoint = "[<br>Contact Us!](#contact)"
-
-		# The events will be listed from the top to the bottom.
-		# All images are stored under 'static/img/about'.
-		# Replace them with your own.
-
-		[[params.about.events]]
-			img = "libh3lp.png"
-			title = "LibraryH3lp"
-			description = "Ask a Librarian is powered by Nub Games’ [LibraryH3lp](https://libraryh3lp.com/), a flexible, scalable chat platform designed for libraries. LibraryH3lp has a simple, user-friendly interface, ample customization options, and a responsive customer support team. The platform has proactive chat functionality and offers unlimited knowledge bases and an optional add-on for text messaging."
-
-		[[params.about.events]]
-			img = "training.png"
-			title = "Training"
-			description = "Scholars Portal offers a comprehensive training program for new chat operators. Sessions include an orientation to the service, hands-on training on the chat platform, a review of best practices for virtual reference and online communication, and an introduction to service policies and procedures."
-
-		[[params.about.events]]
-			img = "support.png"
-			title = "Support"
-			description = "The Ask a Librarian service is coordinated by a designated Scholars Portal librarian, who supports local chat coordinators and manages daily operations, including scheduling, training, communications, assessment, and user support. The coordinator also maintains the chat software, liaises with Nub Games, and hires and supervises student and casual workers who contribute to the service."
-
-		[[params.about.events]]
-			img = "impact.png"
-			title = "Impact"
-			description = "Participating libraries can track local service usage and operator activity through statistical reports available in the LibraryH3lp admin console. Exit survey results are also available to evaluate user satisfaction and service quality. The Ask a Librarian coordinator can assist with statistical tracking, custom reports, and assessment and evaluation projects."
-
-
-	# Use Cases section
-	[params.portfolio]
-    enable = true
-		# All projects defined in their own files. You can find example projects
-		# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-		# at the root of this Hugo site.
-		# For more information take a look at the README.
-		title = "Chat by the Numbers"
-		subtitle = ""
-
-		[params.portfolio.modal]
-			client = "Client"
-			date = "Date"
-			category = "Category"
-			buttonText = "Close"
-
     # Pricing section - see layouts/partials/pricing.html
     [params.pricing]
     	enable = false
     	title = "Pricing"
     	subtitle = ""
-
-   	# FAQ section
-   	[params.faq]
-   		enable = true
-   		title = "FAQ"
-   		subtitle = "Frequently Asked Questions"
-
-   		[[params.faq.questions]]
-   		question = "How can libraries join Ask a Librarian?"
-   		answer = "Additional information about Ask a Librarian is available by [contacting us](#contact). Libraries interested in joining Ask a Librarian are invited to contact [ocul@ocul.on.ca](mailto:ocul@ocul.on.ca)."
-		id = "01"
-
-		[[params.faq.questions]]
-   		question = "How does Ask a Librarian work?"
-   		answer = "Users enter the chat service through graphic chat buttons or pop-up chat invitations located across their library’s website. Clicking on the chat button or invitation launches a chat window, where the user can enter their question. Ask a Librarian staff answer incoming chats using [LibraryH3lp’s](https://libraryh3lp.com/) chat software and documentation on [the Ask wiki space](https://spotdocs.scholarsportal.info/display/ASK). When the service is closed, questions can be sent to the home library by email, or the user can be routed to a specific webpage. <br><br> The service is open 67 hours per week, and multiple operators are scheduled for each shift to handle demand. During all hours of service, chat is available in both English and French."
-		id = "02"
-
-		[[params.faq.questions]]
-   		question = "Who staffs Ask a Librarian?"
-   		answer = "Ask a Librarian is staffed by librarians and library staff from participating Ontario libraries. During evening and weekend hours, trained students or recent graduates of Masters-level programs in library or information studies also staff the service."
-		id = "03"
-
-   		[[params.faq.questions]]
-   		question = "What information are users asked to provide?"
-   		answer = "At the beginning of the chat session, Ask a Librarian users are asked to indicate their name and level of study, in order for staff to provide personalized research assistance. Answering these questions is voluntary, and patrons can choose to use the service anonymously. Staff may request the patron’s email address during a chat session in order to follow-up on a research request, but users are not obligated to provide it."
-		id = "04"
-
-   		[[params.faq.questions]]
-   		question = "What is Ask a Librarian’s privacy policy?"
-   		answer = "OCUL, your university library, and all Ask a Librarian staff respect your privacy. User data can only be accessed by Scholars Portal staff and by designated administrators from participating libraries. Information provided while using the service is collected primarily for statistical reporting to the OCUL board of directors, funding agencies, and your local institution. Data collected through the service may also be used for research purposes, but privacy and anonymity of users will be ensured. Personal information that you provide in order to use Scholars Portal services will be protected in accordance with FIPPA, the Freedom of Information and Protection of Privacy Act. We will not disclose any personal data we collect from you to any party in a manner that would identify you, except to fulfill your service request or where required by law."
-		id = "05"
-
-   		[[params.faq.questions]]
-   		question = "I would like to use Ask a Librarian data for a research project. How can I get access?"
-   		answer = "OCUL’s Virtual Reference Steering Committee is supportive of research involving virtual reference and recognizes its value to the library community. Chat data may be made available to researchers at OCUL member institutions for the purposes of research leading to dissemination of results. Data used for research purposes is anonymized to maintain user privacy, in accordance with Ask a Librarian’s privacy policy. For full details, please refer to the Ask a Librarian [data access policy and request form](https://docs.google.com/forms/d/e/1FAIpQLSeJLotFlu2JXKJXWFrjJ0SlWkNRU_NffevArnpPJ-pUyfkfTA/viewform?c=0&w=1)."
-		id = "06"
-
 
 	# Team section (disabled)
 	[params.team]
@@ -233,134 +57,618 @@ googleAnalytics = ""
 				["fa-linkedin", "#"]
 			]
 
-	# Partners section
-    [params.clients_list]
-        enable = true
-        title="Participants"
-        subtitle=""
+[languages]
 
-    	# All the clients' logos are stored under 'static/img/logos'.
-    	# Replace them with your clients's logos.
+	[languages.en]
+	languageName = "English"
+	languageCode = "en"
+	weight = 1
+	title = "Ask A Librarian"
 
-    	[[params.clients]]
-    		logo = "Algoma.jpg"
-    		link = "http://library.algomau.ca/main/"
-    		alt = "Algoma University"
+		[languages.en.params]
+		# To provide some metadata for search engines feel free to add a few
+		# information about you and your website.
+		name = "Ask A Librarian"
+		description = "Ask a Librarian is a collaborative virtual reference service that connects students, faculty and researchers from participating libraries across Ontario with real-time research assistance through chat in English and French."
 
-		[[params.clients]]
-    		logo = "Brock.png"
-    		link = "https://brocku.ca/library/"
-    		alt = "Brock University"
+		# 404 error customization
+		[languages.en.params.error404]
+			heading = "Page couldn't be found"
+			text = "Please visit [this page](/)"
 
-		[[params.clients]]
-    		logo = "Carleton.jpg"
-    		link = "https://library.carleton.ca/"
-    		alt = "Carleton University"
+		# Navigation
+		[languages.en.params.navigation]
+			brand = "Ask A Librarian"
+			services = "Benefits"
+			about = "Features"
+			portfolio = "Statistics"
+			team = "Team"
+			clients_list = "Participants"
+			pricing = "Pricing"
+			faq = "FAQ"
+			contact = "Contact"
+			img = "logo_notext.png"
 
-		[[params.clients]]
-    		logo = "Guelph.jpg"
-    		link = "http://www.lib.uoguelph.ca/"
-    		alt = "University of Guelph"
+		# prepended links
+		#[[menu.prepend]]
+		#    url = "#"
+		#    name = ""
+		#    weight = 10
 
-		[[params.clients]]
-    		logo = "GuelphHumber.jpg"
-    		link = "https://www.guelphhumber.ca/library"
-    		alt = "University of Guelph-Humber"
-
-		[[params.clients]]
-    		logo = "Lakehead.png"
-    		link = "https://library.lakeheadu.ca/"
-    		alt = "Lakehead University"
-
-		[[params.clients]]
-    		logo = "Laurentian.jpg"
-    		link = "https://laurentian.ca/library"
-    		alt = "Laurentian University"
-
-		[[params.clients]]
-    		logo = "McMaster.jpg"
-    		link = "http://library.mcmaster.ca/"
-    		alt = "McMaster University"
-
-		[[params.clients]]
-    		logo = "OCAD.png"
-    		link = "http://www.ocadu.ca/services/Library.htm"
-    		alt = "OCAD University"
-
-		[[params.clients]]
-    		logo = "UOIT.png"
-    		link = "https://uoit.ca/sites/library/"
-    		alt = "University of Ontario Institute of Technology"
-
-		[[params.clients]]
-    		logo = "Ottawa.png"
-    		link = "https://biblio.uottawa.ca/"
-    		alt = "University of Ottawa"
-
-		[[params.clients]]
-    		logo = "Ryerson.png"
-    		link = "http://library.ryerson.ca/"
-    		alt = "Ryerson University"
-
-		[[params.clients]]
-    		logo = "SaintPaul.png"
-    		link = "https://ustpaul.ca/jean-leon-allie-omi-library.php"
-    		alt = "Saint Paul University"
-
-		[[params.clients]]
-    		logo = "Toronto.png"
-    		link = "https://library.utoronto.ca/"
-    		alt = "University of Toronto"
-
-		[[params.clients]]
-    		logo = "Western.png"
-    		link = "https://www.lib.uwo.ca/"
-    		alt = "Western University"
-
-		[[params.clients]]
-    		logo = "York.png"
-    		link = "https://www.library.yorku.ca/web/"
-    		alt = "York University"
-
-	# Contact section
-	[params.contact]
-    enable = true
-		title = "Contact us"
-		subtitle  = "Get In Touch!"
-		buttonText = "Send message"
-
-		[params.contact.captcha]
-    	#sitekey = ""
-
-		# 'warning' defines error messages for invalid inputs
-		[params.contact.form.name]
-			text = "Your Name *"
-			warning = "Please enter your name."
-
-		[params.contact.form.email]
-			text = "Your Email *"
-			warning = "Please enter your email address."
-
-		[params.contact.form.phone]
-			text = "Your Organization *"
-			warning = "Please enter your organization."
-
-		[params.contact.form.message]
-			text = "Your Message *"
-			warning = "Please enter a message."
+		# postpended links
+		[[languages.en.menu.postpend]]
+			url = "https://spotdocs.scholarsportal.info/display/ASK"
+			name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
+			weight = 10
 
 
-	# Footer section
-	[params.footer]
-    enable = true
+		# Hero section
+		[languages.en.params.hero]
+			# To change the background image of the hero, replace 'header-bg.jpg' in
+			# the 'static/img' folder.
+			title = "Ask a Librarian"
+			subtitle = "Connecting users with research assistance through chat."
+			buttonText = "Tell me more"
+
+			[[languages.en.params.hero.logo]]
+				img = "logo.png"
+
+
+		[languages.en.params.headtext]
+		enable = true
+			description = "Ask a Librarian is a collaborative virtual reference service, offered in English and French, that connects students, faculty members, and researchers from participating university libraries across Ontario with real-time library and research assistance through chat. The service is offered by [Scholars Portal](https://scholarsportal.info), the digital service arm of the [Ontario Council of University Libraries](https://ocul.on.ca) (OCUL)."
+
+		# Benefits section
+		[languages.en.params.services]
+		enable = true
+			title = "Benefits"
+			subtitle = ""
+
+			[[languages.en.params.services.row]]
+
+				[[languages.en.params.services.row.list]]
+					icon = "fa-clock-o"
+					title = "Extended hours"
+					description = "Ask a Librarian is available 67 hours per week during the academic year, including on evenings and weekends."
+
+				[[languages.en.params.services.row.list]]
+					icon = "fa-map-marker"
+					title = "Available anywhere"
+					description = "Ask a Librarian provides online, on-demand assistance from your library website, allowing users to get immediate help no matter where they are."
+
+				[[languages.en.params.services.row.list]]
+					icon = "fa-users"
+					title = "Expert staff"
+					description = "Our expert staff are trained to provide local, trustworthy answers to library- and research-related questions."
+
+				[[languages.en.params.services.row.list]]
+					icon = "fa-language"
+					title = "Bilingual service"
+					description = "Chat support is available in both English and French during all service hours."
+
+		# Features section
+		[languages.en.params.about]
+		enable = true
+			title = "Features"
+			subtitle = ""
+			endpoint = "[<br>Contact Us!](#contact)"
+
+			# The events will be listed from the top to the bottom.
+			# All images are stored under 'static/img/about'.
+			# Replace them with your own.
+
+			[[languages.en.params.about.events]]
+				img = "libh3lp.png"
+				title = "LibraryH3lp"
+				description = "Ask a Librarian is powered by Nub Games’ [LibraryH3lp](https://libraryh3lp.com/), a flexible, scalable chat platform designed for libraries. LibraryH3lp has a simple, user-friendly interface, ample customization options, and a responsive customer support team. The platform has proactive chat functionality and offers unlimited knowledge bases and an optional add-on for text messaging."
+
+			[[languages.en.params.about.events]]
+				img = "training.png"
+				title = "Training"
+				description = "Scholars Portal offers a comprehensive training program for new chat operators. Sessions include an orientation to the service, hands-on training on the chat platform, a review of best practices for virtual reference and online communication, and an introduction to service policies and procedures."
+
+			[[languages.en.params.about.events]]
+				img = "support.png"
+				title = "Support"
+				description = "The Ask a Librarian service is coordinated by a designated Scholars Portal librarian, who supports local chat coordinators and manages daily operations, including scheduling, training, communications, assessment, and user support. The coordinator also maintains the chat software, liaises with Nub Games, and hires and supervises student and casual workers who contribute to the service."
+
+			[[languages.en.params.about.events]]
+				img = "impact.png"
+				title = "Impact"
+				description = "Participating libraries can track local service usage and operator activity through statistical reports available in the LibraryH3lp admin console. Exit survey results are also available to evaluate user satisfaction and service quality. The Ask a Librarian coordinator can assist with statistical tracking, custom reports, and assessment and evaluation projects."
+
+
+		# Use Cases section
+		[languages.en.params.portfolio]
+		enable = true
+			# All projects defined in their own files. You can find example projects
+			# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+			# at the root of this Hugo site.
+			# For more information take a look at the README.
+			title = "Chat by the Numbers"
+			subtitle = ""
+
+			[languages.en.params.portfolio.modal]
+				client = "Client"
+				date = "Date"
+				category = "Category"
+				buttonText = "Close"
+
+		# FAQ section
+		[languages.en.params.faq]
+			enable = true
+			title = "FAQ"
+			subtitle = "Frequently Asked Questions"
+
+			[[languages.en.params.faq.questions]]
+			question = "How can libraries join Ask a Librarian?"
+			answer = "Additional information about Ask a Librarian is available by [contacting us](#contact). Libraries interested in joining Ask a Librarian are invited to contact [ocul@ocul.on.ca](mailto:ocul@ocul.on.ca)."
+			id = "01"
+
+			[[languages.en.params.faq.questions]]
+			question = "How does Ask a Librarian work?"
+			answer = "Users enter the chat service through graphic chat buttons or pop-up chat invitations located across their library’s website. Clicking on the chat button or invitation launches a chat window, where the user can enter their question. Ask a Librarian staff answer incoming chats using [LibraryH3lp’s](https://libraryh3lp.com/) chat software and documentation on [the Ask wiki space](https://spotdocs.scholarsportal.info/display/ASK). When the service is closed, questions can be sent to the home library by email, or the user can be routed to a specific webpage. <br><br> The service is open 67 hours per week, and multiple operators are scheduled for each shift to handle demand. During all hours of service, chat is available in both English and French."
+			id = "02"
+
+			[[languages.en.params.faq.questions]]
+			question = "Who staffs Ask a Librarian?"
+			answer = "Ask a Librarian is staffed by librarians and library staff from participating Ontario libraries. During evening and weekend hours, trained students or recent graduates of Masters-level programs in library or information studies also staff the service."
+			id = "03"
+
+			[[languages.en.params.faq.questions]]
+			question = "What information are users asked to provide?"
+			answer = "At the beginning of the chat session, Ask a Librarian users are asked to indicate their name and level of study, in order for staff to provide personalized research assistance. Answering these questions is voluntary, and patrons can choose to use the service anonymously. Staff may request the patron’s email address during a chat session in order to follow-up on a research request, but users are not obligated to provide it."
+			id = "04"
+
+			[[languages.en.params.faq.questions]]
+			question = "What is Ask a Librarian’s privacy policy?"
+			answer = "OCUL, your university library, and all Ask a Librarian staff respect your privacy. User data can only be accessed by Scholars Portal staff and by designated administrators from participating libraries. Information provided while using the service is collected primarily for statistical reporting to the OCUL board of directors, funding agencies, and your local institution. Data collected through the service may also be used for research purposes, but privacy and anonymity of users will be ensured. Personal information that you provide in order to use Scholars Portal services will be protected in accordance with FIPPA, the Freedom of Information and Protection of Privacy Act. We will not disclose any personal data we collect from you to any party in a manner that would identify you, except to fulfill your service request or where required by law."
+			id = "05"
+
+			[[languages.en.params.faq.questions]]
+			question = "I would like to use Ask a Librarian data for a research project. How can I get access?"
+			answer = "OCUL’s Virtual Reference Steering Committee is supportive of research involving virtual reference and recognizes its value to the library community. Chat data may be made available to researchers at OCUL member institutions for the purposes of research leading to dissemination of results. Data used for research purposes is anonymized to maintain user privacy, in accordance with Ask a Librarian’s privacy policy. For full details, please refer to the Ask a Librarian [data access policy and request form](https://docs.google.com/forms/d/e/1FAIpQLSeJLotFlu2JXKJXWFrjJ0SlWkNRU_NffevArnpPJ-pUyfkfTA/viewform?c=0&w=1)."
+			id = "06"
+
+
+		# Partners section
+		[languages.en.params.clients_list]
+			enable = true
+			title="Participants"
+			subtitle=""
+
+			# All the clients' logos are stored under 'static/img/logos'.
+			# Replace them with your clients's logos.
+
+			[[languages.en.params.clients]]
+				logo = "Algoma.jpg"
+				link = "http://library.algomau.ca/main/"
+				alt = "Algoma University"
+
+			[[languages.en.params.clients]]
+				logo = "Brock.png"
+				link = "https://brocku.ca/library/"
+				alt = "Brock University"
+
+			[[languages.en.params.clients]]
+				logo = "Carleton.jpg"
+				link = "https://library.carleton.ca/"
+				alt = "Carleton University"
+
+			[[languages.en.params.clients]]
+				logo = "Guelph.jpg"
+				link = "http://www.lib.uoguelph.ca/"
+				alt = "University of Guelph"
+
+			[[languages.en.params.clients]]
+				logo = "GuelphHumber.jpg"
+				link = "https://www.guelphhumber.ca/library"
+				alt = "University of Guelph-Humber"
+
+			[[languages.en.params.clients]]
+				logo = "Lakehead.png"
+				link = "https://library.lakeheadu.ca/"
+				alt = "Lakehead University"
+
+			[[languages.en.params.clients]]
+				logo = "Laurentian.jpg"
+				link = "https://laurentian.ca/library"
+				alt = "Laurentian University"
+
+			[[languages.en.params.clients]]
+				logo = "McMaster.jpg"
+				link = "http://library.mcmaster.ca/"
+				alt = "McMaster University"
+
+			[[languages.en.params.clients]]
+				logo = "OCAD.png"
+				link = "http://www.ocadu.ca/services/Library.htm"
+				alt = "OCAD University"
+
+			[[languages.en.params.clients]]
+				logo = "UOIT.png"
+				link = "https://uoit.ca/sites/library/"
+				alt = "University of Ontario Institute of Technology"
+
+			[[languages.en.params.clients]]
+				logo = "Ottawa.png"
+				link = "https://biblio.uottawa.ca/"
+				alt = "University of Ottawa"
+
+			[[languages.en.params.clients]]
+				logo = "Ryerson.png"
+				link = "http://library.ryerson.ca/"
+				alt = "Ryerson University"
+
+			[[languages.en.params.clients]]
+				logo = "SaintPaul.png"
+				link = "https://ustpaul.ca/jean-leon-allie-omi-library.php"
+				alt = "Saint Paul University"
+
+			[[languages.en.params.clients]]
+				logo = "Toronto.png"
+				link = "https://library.utoronto.ca/"
+				alt = "University of Toronto"
+
+			[[languages.en.params.clients]]
+				logo = "Western.png"
+				link = "https://www.lib.uwo.ca/"
+				alt = "Western University"
+
+			[[languages.en.params.clients]]
+				logo = "York.png"
+				link = "https://www.library.yorku.ca/web/"
+				alt = "York University"
+
+
+		# Contact section
+		[languages.en.params.contact]
+		enable = true
+			title = "Contact us"
+			subtitle  = "Get In Touch!"
+			buttonText = "Send message"
+
+			[languages.en.params.contact.captcha]
+			#sitekey = ""
+
+			# 'warning' defines error messages for invalid inputs
+			[languages.en.params.contact.form.name]
+				text = "Your Name *"
+				warning = "Please enter your name."
+
+			[languages.en.params.contact.form.email]
+				text = "Your Email *"
+				warning = "Please enter your email address."
+
+			[languages.en.params.contact.form.phone]
+				text = "Your Organization *"
+				warning = "Please enter your organization."
+
+			[languages.en.params.contact.form.message]
+				text = "Your Message *"
+				warning = "Please enter a message."
+
+
+		# Footer section
+		[languages.en.params.footer]
+		enable = true
 		copyright = "&copy; Ontario Council of University Libraries"
-    secondcopyright = "Scholars Portal"
+		secondcopyright = "Scholars Portal"
 		logo = "ocul.png"
-    secondlogo = "sp.png"
+		secondlogo = "sp.png"
 		link = "http://ocul.on.ca"
-    secondlink = "http://scholarsportal.info/"
+		secondlink = "http://scholarsportal.info/"
 
-		[[params.footer.social]]
-			icon = "fa-twitter"
-			link = "https://twitter.com/scholarsportal"
-			alt = "twitter"
+			[[languages.en.params.footer.social]]
+				icon = "fa-twitter"
+				link = "https://twitter.com/scholarsportal"
+				alt = "twitter"
+
+
+	# ---------------------------- #
+	#	French translations
+	# ---------------------------- #
+	[languages.fr]
+	languageName = "Français"
+	languageCode = "fr"
+	weight = 2
+	title = "Clavardez avec nos bibliothécaires"
+
+		[languages.fr.params]
+		# To provide some metadata for search engines feel free to add a few
+		# information about you and your website.
+		name = "Clavardez avec nos bibliothécaires"
+		description = "Clavardez avec nos bibliothécaires est un service collaboratif de référence virtuelle visant à offrir un appui à la recherche en anglais et en français par clavardage aux étudiants, aux professeurs et aux chercheurs des universités ontariennes participantes. "
+
+		# 404 error customization
+		[languages.fr.params.error404]
+			heading = "Page couldn't be found"
+			text = "Please visit [this page](/)"
+
+		# Navigation
+		[languages.fr.params.navigation]
+			brand = "Clavardez avec nos bibliothécaires"
+			services = "Avantages"
+			about = "Caractéristiques"
+			portfolio = "Statistiques"
+			team = "Team"
+			clients_list = "Participants"
+			pricing = "Pricing"
+			faq = "FAQ"
+			contact = "Contact"
+			img = "logo_notext.png"
+
+		# prepended links
+		#[[menu.prepend]]
+		#    url = "#"
+		#    name = ""
+		#    weight = 10
+
+		# postpended links
+		[[languages.fr.menu.postpend]]
+			url = "https://spotdocs.scholarsportal.info/display/ASK"
+			name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
+			weight = 10
+
+
+		# Hero section
+		[languages.fr.params.hero]
+			# To change the background image of the hero, replace 'header-bg.jpg' in
+			# the 'static/img' folder.
+			title = "Clavardez avec nos bibliothécaires"
+			subtitle = "Un service de référence virtuelle visant à offrir un appui à la recherche par clavardage."
+			buttonText = "Dis m'en plus"
+
+			[[languages.fr.params.hero.logo]]
+				img = "logo.png"
+
+
+		[languages.fr.params.headtext]
+		enable = true
+			description = "Clavardez avec nos bibliothécaires est un service collaboratif de référence virtuelle visant à offrir un appui à la recherche, en français et en anglais, en temps réel par clavardage aux étudiants, aux professeurs et aux chercheurs des universités ontariennes participantes. Le service est offert par [Scholars Portal](https://scholarsportal.info), la division de service numérique du [Conseil des bibliothèques universitaires de l’Ontario](https://ocul.on.ca) (CBUO)."
+
+		# Benefits section
+		[languages.fr.params.services]
+		enable = true
+			title = "Avantages"
+			subtitle = ""
+
+			[[languages.fr.params.services.row]]
+
+				[[languages.fr.params.services.row.list]]
+					icon = "fa-clock-o"
+					title = "Heures prolongées"
+					description = "Clavardez nos bibliothécaires est disponible 67 heures par semaine au cours de l’année scolaire (y compris les soirs et les fins de semaine)."
+
+				[[languages.fr.params.services.row.list]]
+					icon = "fa-map-marker"
+					title = "Disponible n’importe où"
+					description = "Une assistance en ligne sur demande à partir du site Web de la bibliothèque, permettant aux usagers d’obtenir une aide immédiate, peu importe où ils se trouvent."
+
+				[[languages.fr.params.services.row.list]]
+					icon = "fa-users"
+					title = "Personnel expert"
+					description = "Notre personnel expert est formé pour fournir des réponses locales et fiables aux questions liées à la bibliothèque et à la recherche."
+
+				[[languages.fr.params.services.row.list]]
+					icon = "fa-language"
+					title = "Service bilingue"
+					description = "Le soutien en ligne est disponible en anglais et en français pendant toutes les heures de service."
+
+		# Features section
+		[languages.fr.params.about]
+		enable = true
+			title = "Caractéristiques"
+			subtitle = ""
+			endpoint = "[<br>Contact Us!](#contact)"
+
+			# The events will be listed from the top to the bottom.
+			# All images are stored under 'static/img/about'.
+			# Replace them with your own.
+
+			[[languages.fr.params.about.events]]
+				img = "/libh3lp.png"
+				title = "LibraryH3lp"
+				description = "Clavardez avec nos bibliothécaires est exécuté sur [LibraryH3lp](https://libraryh3lp.com/), un logiciel de clavardage flexible et évolutif conçut pour les bibliothèques par Nub Games. LibraryH3lp dispose d’une interface simple et conviviale, de nombreuses options de personnalisation et d’une équipe d’assistance aux clientèles réactive. Le logiciel offre une fonctionnalité de clavardage proactive et des bases de connaissances illimitées, ainsi qu’un module complémentaire facultatif pour le textage."
+
+			[[languages.fr.params.about.events]]
+				img = "training.png"
+				title = "Formation"
+				description = "Scholars Portal offre un programme de formation complet pour les nouveaux opérateurs de clavardage. Les séances comprennent une orientation sur le service, une formation pratique sur le logiciel de clavardage, un examen des meilleures pratiques pour la référence virtuelle et la communication en ligne, et une introduction aux politiques et procédures de service."
+
+			[[languages.fr.params.about.events]]
+				img = "support.png"
+				title = "Soutien"
+				description = "Le service est coordonné par une bibliothécaire désignée travaillant à Scholars Portal, qui soutient les coordinateurs de clavardage locaux et gère les opérations quotidiennes, y compris la planification, la formation, les communications, l’évaluation et le soutien des opérateurs. Le coordinateur gère également le logiciel de clavardage, assure la liaison avec Nub Games, et recrute et supervise les étudiants et les employés occasionnels qui contribuent au service."
+
+			[[languages.fr.params.about.events]]
+				img = "impact.png"
+				title = "Valeur"
+				description = "Les bibliothèques participantes peuvent suivre l’utilisation du service local et l’activité des opérateurs grâce à des rapports statistiques disponibles dans la console d’administration LibraryH3lp. Les résultats de l'enquête à la sortie sont également disponibles pour évaluer la satisfaction des usagers et la qualité du service. Le coordonnateur de Clavardez avec nos bibliothécaires peut aider au suivi statistique, aux rapports personnalisés et aux projets d’évaluation."
+
+
+		# Use Cases section
+		[languages.fr.params.portfolio]
+		enable = true
+			# All projects defined in their own files. You can find example projects
+			# at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+			# at the root of this Hugo site.
+			# For more information take a look at the README.
+			title = "Statistiques annuelles"
+			subtitle = ""
+
+			[languages.fr.params.portfolio.modal]
+				client = "Client"
+				date = "Date"
+				category = "Category"
+				buttonText = "Close"
+
+		# FAQ section
+		[languages.fr.params.faq]
+			enable = true
+			title = "FAQ"
+			subtitle = "Foire aux questions"
+
+			[[languages.fr.params.faq.questions]]
+			question = "Comment notre bibliothèque peut-elle rejoindre le service?"
+			answer = "Pour de plus amples renseignements sur le service Clavardez avec nos bibliothécaires, [contactez-nous](#contact). Pour savoir comment votre bibliothèque peut prendre part au service Clavardez avec nos bibliothécaires, veuillez communiquer avec nous à l’adresse suivante : [ocul@ocul.on.ca](mailto:ocul@ocul.on.ca)."
+			id = "01"
+
+			[[languages.fr.params.faq.questions]]
+			question = "Comment fonctionne le service?"
+			answer = "Les usagers entrent dans le service par des boutons graphiques ou des invitations situées sur le site Web de la bibliothèque. Un clic sur un bouton ou une invitation lance une fenêtre de clavardage où l’usager peut entrer leur question. Le personnel du service répond aux questions en utilisant le logiciel de clavardage [LibraryH3lp](https://libraryh3lp.com/) et de la documentation sur [l’espace wiki](https://spotdocs.scholarsportal.info/display/ASK) pour Clavardez avec nos bibliothécaires. Lorsque le service est fermé, les questions peuvent être envoyées automatiquement à la bibliothèque locale de l’usager par courriel, ou l’usager peut être redirigé vers une page Web déterminée. <br><br> Le service est ouvert 67 heures par semaine, et plusieurs opérateurs sont prévus pour chaque quart de travail pour gérer la demande. Pendant toutes heures de service, le clavardage est disponible en anglais et en français."
+			id = "02"
+
+			[[languages.fr.params.faq.questions]]
+			question = "Qui travaille sur le service?"
+			answer = "Le personnel du service Clavardez avec nos bibliothécaires est composé de bibliothécaires et de membres du personnel des bibliothèques participantes de l’Ontario. Les soirs et les fins de semaine, d’étudiants formés et de récents diplômés des programmes en bibliothéconomie ou science de l’information assurent également le service. "
+			id = "03"
+
+			[[languages.fr.params.faq.questions]]
+			question = "Quelles informations les usagers doivent-ils fournir lors d’une séance de clavardage?"
+			answer = "Au début de la séance de clavardage, les usagers du service Clavardez avec nos bibliothécaires sont invités à indiquer leur nom et leur niveau d’études, afin que le personnel du service puisse offrir un service personnalisé en matière d’aide à la recherche. Les réponses sont volontaires, et les usagers peuvent choisir de clavarder de façon anonyme. Un opérateur peut demander à l’usager de fournir son adresse courriel pour le suivi d’une demande de recherche, mais l’usager n’est pas obligé de la fournir."
+			id = "04"
+
+			[[languages.fr.params.faq.questions]]
+			question = "Quelle est la politique de confidentialité du service?"
+			answer = "Le Conseil des bibliothèques universitaires de l’Ontario (CBUO), votre bibliothèque universitaire et le personnel du service Clavardez avec nos bibliothécaires respectent votre vie privée. Les renseignements des usagers ne sont accessibles que par le personnel de Scholars Portal et par les administrateurs désignés des bibliothèques participantes. L’information que vous fournissez lors de l’utilisation du service est recueillie principalement pour l’établissement de rapports statistiques au conseil d’administration du CBUO, aux organismes de financement et à votre établissement local. Vos données peuvent également être utilisées à des fins de recherche, mais la vie privée et l’anonymat des usagers sont toujours respectés. Les renseignements personnels que vous fournissez pour accéder aux services de Scholars Portal sont protégés conformément à la LAIPVP, la Loi sur l’accès à l’information et la protection de la vie privée. L'information personnelle transmise n'est communiquée à un tiers de manière à vous identifier personnellement que dans les cas où nous répondons à votre demande de service ou ces renseignements sont exigés par la loi."
+			id = "05"
+
+			[[languages.fr.params.faq.questions]]
+			question = "Je voudrais utiliser les données provenant des séances de clavardage pour un projet de recherche. Comment puis-je avoir accès?"
+			answer = "Le Comité directeur de référence virtuelle du Conseil des bibliothèques universitaires de l’Ontario (CBUO) appuie la recherche portant sur la référence virtuelle et reconnaît sa valeur pour la communauté des bibliothèques. Les données de clavardage peuvent être mises à la disposition des chercheurs à travers du CBUO à des fins de recherche menant à la diffusion des résultats. Pour de plus amples détails, veuillez référer à la [politique d'accès aux données et au formulaire de demande](https://docs.google.com/forms/d/e/1FAIpQLSeJLotFlu2JXKJXWFrjJ0SlWkNRU_NffevArnpPJ-pUyfkfTA/viewform?c=0&w=1) pour Clavardez avec nos bibliothécaires (seulement disponible en anglais). Les données utilisées à des fins de recherche sont anonymisées afin de préserver la confidentialité des usagers, conformément à la politique de confidentialité du service."
+			id = "06"
+
+
+		# Partners section
+		[languages.fr.params.clients_list]
+			enable = true
+			title="Participants"
+			subtitle=""
+
+			# All the clients' logos are stored under 'static/img/logos'.
+			# Replace them with your clients's logos.
+
+			[[languages.fr.params.clients]]
+				logo = "Algoma.jpg"
+				link = "http://library.algomau.ca/main/"
+				alt = "Algoma University"
+
+			[[languages.fr.params.clients]]
+				logo = "Brock.png"
+				link = "https://brocku.ca/library/"
+				alt = "Brock University"
+
+			[[languages.fr.params.clients]]
+				logo = "Carleton.jpg"
+				link = "https://library.carleton.ca/"
+				alt = "Carleton University"
+
+			[[languages.fr.params.clients]]
+				logo = "Guelph.jpg"
+				link = "http://www.lib.uoguelph.ca/"
+				alt = "University of Guelph"
+
+			[[languages.fr.params.clients]]
+				logo = "GuelphHumber.jpg"
+				link = "https://www.guelphhumber.ca/library"
+				alt = "University of Guelph-Humber"
+
+			[[languages.fr.params.clients]]
+				logo = "Lakehead.png"
+				link = "https://library.lakeheadu.ca/"
+				alt = "Lakehead University"
+
+			[[languages.fr.params.clients]]
+				logo = "Laurentian.jpg"
+				link = "https://laurentian.ca/library"
+				alt = "Université Laurentienne"
+
+			[[languages.fr.params.clients]]
+				logo = "McMaster.jpg"
+				link = "http://library.mcmaster.ca/"
+				alt = "McMaster University"
+
+			[[languages.fr.params.clients]]
+				logo = "OCAD.png"
+				link = "http://www.ocadu.ca/services/Library.htm"
+				alt = "OCAD University"
+
+			[[languages.fr.params.clients]]
+				logo = "UOIT.png"
+				link = "https://uoit.ca/sites/library/"
+				alt = "University of Ontario Institute of Technology"
+
+			[[languages.fr.params.clients]]
+				logo = "Ottawa.png"
+				link = "https://biblio.uottawa.ca/"
+				alt = "Université d’Ottawa"
+
+			[[languages.fr.params.clients]]
+				logo = "Ryerson.png"
+				link = "http://library.ryerson.ca/"
+				alt = "Ryerson University"
+
+			[[languages.fr.params.clients]]
+				logo = "SaintPaul.png"
+				link = "https://ustpaul.ca/jean-leon-allie-omi-library.php"
+				alt = "Université Saint-Paul"
+
+			[[languages.fr.params.clients]]
+				logo = "Toronto.png"
+				link = "https://library.utoronto.ca/"
+				alt = "University of Toronto"
+
+			[[languages.fr.params.clients]]
+				logo = "Western.png"
+				link = "https://www.lib.uwo.ca/"
+				alt = "Western University"
+
+			[[languages.fr.params.clients]]
+				logo = "York.png"
+				link = "https://www.library.yorku.ca/web/"
+				alt = "Université York"
+
+
+		# Contact section
+		[languages.fr.params.contact]
+		enable = true
+			title = "Nous contacter"
+			subtitle  = "Get In Touch!"
+			buttonText = "Send message"
+
+			[languages.fr.params.contact.captcha]
+			#sitekey = ""
+
+			# 'warning' defines error messages for invalid inputs
+			[languages.fr.params.contact.form.name]
+				text = "Votre nom *"
+				warning = "Please enter your name."
+
+			[languages.fr.params.contact.form.email]
+				text = "Votre email *"
+				warning = "Please enter your email address."
+
+			[languages.fr.params.contact.form.phone]
+				text = "Votre organization *"
+				warning = "Please enter your organization."
+
+			[languages.fr.params.contact.form.message]
+				text = "Votre message *"
+				warning = "Please enter a message."
+
+
+		# Footer section
+		[languages.fr.params.footer]
+		enable = true
+		copyright = "&copy; Conseil des bibliotheques universitaires de l'Ontario"
+		secondcopyright = "Scholars Portal"
+		logo = "cbou.png"
+		secondlogo = "sp.png"
+		link = "http://ocul.on.ca"
+		secondlink = "http://scholarsportal.info/"
+
+			[[languages.fr.params.footer.social]]
+				icon = "fa-twitter"
+				link = "https://twitter.com/scholarsportal"
+				alt = "twitter"
