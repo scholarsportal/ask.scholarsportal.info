@@ -80,7 +80,7 @@
                     <a href="{{ .URL }}">{{ .Name | markdownify }}</a>
                 </li>
                 {{ end }}
-                <li class="translation"> {{ partial "translate.html" . }} </li>
+                <li> {{ partial "translate.html" . }} </li>
             </ul>
         </div>
         {{ "<!-- /.navbar-collapse -->" | safeHTML }}
