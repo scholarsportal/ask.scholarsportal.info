@@ -467,7 +467,7 @@ defaultContentLanguageInSubdir = "false"
 			# Replace them with your own.
 
 			[[languages.fr.params.about.events]]
-				img = "/libh3lp.png"
+				img = "libh3lp.png"
 				title = "LibraryH3lp"
 				description = "Clavardez avec nos bibliothécaires est exécuté sur [LibraryH3lp](https://libraryh3lp.com/), un logiciel de clavardage flexible et évolutif conçut pour les bibliothèques par Nub Games. LibraryH3lp dispose d’une interface simple et conviviale, de nombreuses options de personnalisation et d’une équipe d’assistance aux clientèles réactive. Le logiciel offre une fonctionnalité de clavardage proactive et des bases de connaissances illimitées, ainsi qu’un module complémentaire facultatif pour le textage."
 
