@@ -106,33 +106,55 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-brand {
-	padding: 0px 15px;
+    padding: 0px 15px;
 }
 
 .navbar-brand img {
-	width: 75px;
+    width: 75px;
     height: auto;
-	opacity: 0;
+    opacity: 0;
 }
 
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .navbar-shrink img {
-
-	/* make things invisible upon start */
-	-webkit-animation:fadeIn 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	-moz-animation:fadeIn 1;
-	animation:fadeIn 1;
-
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
-
+    /* make things invisible upon start */
+    -webkit-animation: fadeIn 1;
+    /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn 1;
+    animation: fadeIn 1;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -153,7 +175,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .nav li a {
-	height: 100px;
+    height: 100px;
     padding-top: 40px;
     font-weight: 600;
     color: #000;
@@ -180,23 +202,21 @@ section#headtext {
 .headtext {
     font-size: 21px;
     text-align: left;
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
 .ocul img {
-	width: 300px;
+    width: 300px;
 }
 
 @media(min-width:768px) {
     .navbar-default .navbar-brand {
         padding-top: 10px;
     }
-
     .navbar-default .navbar-nav>.active>a {
         border-radius: 0px;
     }
-
     .navbar-default.navbar-shrink {
         padding: 0;
         height: 100px;
@@ -205,62 +225,52 @@ section#headtext {
 }
 
 /* Change breakpoint for navbar collapse */
+
 @media(max-width:991px) {
     .navbar-header {
         float: none;
     }
-
-    .navbar-left,.navbar-right {
+    .navbar-left,
+    .navbar-right {
         float: none !important;
     }
-
     .navbar-toggle {
         display: block;
     }
-
     .navbar-collapse {
         border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
-
     .navbar-fixed-top {
         top: 0;
         border-width: 0 0 1px;
     }
-
     .navbar-collapse.collapse {
-        display: none!important;
+        display: none !important;
     }
-
     .navbar-nav {
-        float: none!important;
+        float: none !important;
         margin-top: 7.5px;
     }
-
     .navbar-nav>li {
         float: none;
     }
-
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
-    .collapse.in{
+    .collapse.in {
         display: block !important;
     }
-
     .navbar-default {
         border-color: transparent;
         background-color: #ececec;
         padding: 0;
         height: auto !important;
     }
-
     .navbar-collapse.in {
         overflow-y: auto !important;
     }
-
     .navbar .container {
         padding-right: 15px;
         padding-left: 15px;
@@ -268,20 +278,25 @@ section#headtext {
         margin-left: auto;
         width: 100%;
     }
-
     .navbar-default .navbar-brand {
         padding-top: 0px;
     }
-
     .navbar-brand img {
         width: 45px;
         margin: 10px;
     }
 }
 
-@media(min-width:992px) {
+@media(min-width:1200px) {
     .navbar-brand>img {
         margin: 20px;
+    }
+}
+
+@media(max-width:1199px) {
+    .navbar-brand>img {
+        margin: 15px -15px;
+        padding: 5px;
     }
 }
 
@@ -292,21 +307,22 @@ header {
 }
 
 header .intro-text .intro-lead-in {
-    margin-top: 45px;
-	margin-bottom: 25px;
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 54px;
- 	font-weight: 100;
+    font-weight: 100;
     line-height: 50px;
     font-style: inherit;
 }
 
 header .intro-text .intro-heading {
-    margin-bottom: 50px;
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 65px;
+    margin-bottom: 45px;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 60px;
     font-weight: 800;
     line-height: 75px;
+    max-width: 95%;
 }
 
 @media (min-width: 768px) {
@@ -320,75 +336,62 @@ header .intro-text .intro-heading {
     section {
         padding: 150px 0;
     }
-
     header .intro-text .intro-lead-in {
-		font-size: 52px;
-		line-height: 45px;
-	}
-
-	header .intro-text .intro-heading {
-		font-size: 55px;
-		line-height: 50px;
-	}
-
-	.navbar-right {
-	    float: left!important;
-	}
-
-	.ocul {
-		margin-bottom: 25px;
-	}
-
-	.navbar-brand img {
-	    width: 45px;
+        font-size: 52px;
+        line-height: 45px;
+    }
+    header .intro-text .intro-heading {
+        font-size: 55px;
+        line-height: 50px;
+    }
+    .navbar-right {
+        float: left !important;
+    }
+    .ocul {
+        margin-bottom: 25px;
+    }
+    .navbar-brand img {
+        width: 45px;
         margin: 0;
-	}
+    }
 }
+
 @media(max-width:568px) {
     header .intro-text {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-
     header .intro-text img {
-       display: none;
+        display: none;
     }
-
-	.navbar-brand img {
-	    width: 45px;
-	    opacity: 1;
+    .navbar-brand img {
+        width: 45px;
+        opacity: 1;
         margin-top: 0px;
-	}
-
-	.fade-in {
-		opacity: 1;
-	}
-
+    }
+    .fade-in {
+        opacity: 1;
+    }
     section {
         padding: 150px 0;
     }
-
     header .intro-text .intro-lead-in {
-		font-size: 24px;
-		line-height: 45px;
-	}
-
-	header .intro-text .intro-heading {
-		font-size: 25px;
-		line-height: 22px;
-	}
-
-	.navbar-right {
-	    float: left!important;
-	}
-
-	.ocul {
-		margin-bottom:25px;
-	}
-
-	.navbar-shrink img {
-		animation:none;
-	}
+        font-size: 24px;
+        line-height: 45px;
+    }
+    header .intro-text .intro-heading {
+        font-size: 25px;
+        line-height: 22px;
+    }
+    .navbar-right {
+        float: left !important;
+    }
+    .ocul {
+        margin-bottom: 25px;
+    }
+    .navbar-shrink img {
+        animation: none;
+    }
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
@@ -415,8 +418,8 @@ header .intro-text .intro-heading {
     margin-top: 25px;
 }
 
-.pricing > p,
-.pricing > ul {
+.pricing>p,
+.pricing>ul {
     font-size: 16px;
 }
 
@@ -427,17 +430,17 @@ header .intro-text .intro-heading {
 
 th {
     font-size: 18px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 td {
     font-size: 16px;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .faq-question {
     font-size: 18px;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding-bottom: 10px;
     color: #b05539;
 }

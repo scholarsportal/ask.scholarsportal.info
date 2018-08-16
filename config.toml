@@ -96,10 +96,10 @@ defaultContentLanguageInSubdir = "false"
 		#    weight = 10
 
 		# postpended links
-		[[languages.en.menu.postpend]]
-			url = "https://spotdocs.scholarsportal.info/display/ASK"
-			name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
-			weight = 10
+		#[[languages.en.menu.postpend]]
+		#	url = "https://spotdocs.scholarsportal.info/display/ASK"
+		#	name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
+		#	weight = 10
 
 
 		# Hero section
@@ -405,10 +405,10 @@ defaultContentLanguageInSubdir = "false"
 		#    weight = 10
 
 		# postpended links
-		[[languages.fr.menu.postpend]]
-			url = "https://spotdocs.scholarsportal.info/display/ASK"
-			name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
-			weight = 10
+		#[[languages.fr.menu.postpend]]
+		#	url = "https://spotdocs.scholarsportal.info/display/ASK"
+		#	name = "Login <i class=\"fa fa-external-link\" aria-hidden=\"true\"></i>"
+		#	weight = 10
 
 
 		# Hero section
@@ -460,7 +460,7 @@ defaultContentLanguageInSubdir = "false"
 		enable = true
 			title = "Caractéristiques"
 			subtitle = ""
-			endpoint = "[<br>Contact Us!](#contact)"
+			endpoint = "[<br>Contactez nous!](#contact)"
 
 			# The events will be listed from the top to the bottom.
 			# All images are stored under 'static/img/about'.
@@ -501,7 +501,7 @@ defaultContentLanguageInSubdir = "false"
 				client = "Client"
 				date = "Date"
 				category = "Category"
-				buttonText = "Close"
+				buttonText = "Fermer"
 
 		# FAQ section
 		[languages.fr.params.faq]
@@ -634,7 +634,7 @@ defaultContentLanguageInSubdir = "false"
 		[languages.fr.params.contact]
 		enable = true
 			title = "Nous contacter"
-			subtitle  = "Get In Touch!"
+			subtitle  = "Entrer en Contact!"
 			buttonText = "Send message"
 
 			[languages.fr.params.contact.captcha]
@@ -663,9 +663,9 @@ defaultContentLanguageInSubdir = "false"
 		enable = true
 		copyright = "&copy; Conseil des bibliotheques universitaires de l'Ontario"
 		secondcopyright = "Scholars Portal"
-		logo = "cbou.png"
+		logo = "cbuo.png"
 		secondlogo = "sp.png"
-		link = "http://ocul.on.ca"
+		link = "https://ocul.on.ca"
 		secondlink = "http://scholarsportal.info/"
 
 			[[languages.fr.params.footer.social]]
