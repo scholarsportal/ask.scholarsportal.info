@@ -111,7 +111,7 @@ defaultContentLanguageInSubdir = "false"
 			buttonText = "Tell me more"
 
 			[[languages.en.params.hero.logo]]
-				img = "logo.png"
+				img = "logo_notext.png"
 
 
 		[languages.en.params.headtext]
@@ -416,11 +416,11 @@ defaultContentLanguageInSubdir = "false"
 			# To change the background image of the hero, replace 'header-bg.jpg' in
 			# the 'static/img' folder.
 			title = "Clavardez avec nos bibliothécaires"
-			subtitle = "Un service de référence virtuelle visant à offrir un appui à la recherche par clavardage."
-			buttonText = "Dis m'en plus"
+			subtitle = "Reliant les usagers avec l’aide à la recherche via clavardage."
+			buttonText = "En savoir plus"
 
 			[[languages.fr.params.hero.logo]]
-				img = "logo.png"
+				img = "logo_notext.png"
 
 
 		[languages.fr.params.headtext]
@@ -460,7 +460,7 @@ defaultContentLanguageInSubdir = "false"
 		enable = true
 			title = "Caractéristiques"
 			subtitle = ""
-			endpoint = "[<br>Contactez nous!](#contact)"
+			endpoint = "[<br>Contactez nous !](#contact)"
 
 			# The events will be listed from the top to the bottom.
 			# All images are stored under 'static/img/about'.
@@ -634,8 +634,8 @@ defaultContentLanguageInSubdir = "false"
 		[languages.fr.params.contact]
 		enable = true
 			title = "Nous contacter"
-			subtitle  = "Entrer en Contact!"
-			buttonText = "Send message"
+			subtitle  = "Prenez contact !"
+			buttonText = "Envoyer"
 
 			[languages.fr.params.contact.captcha]
 			#sitekey = ""

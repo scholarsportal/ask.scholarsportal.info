@@ -306,6 +306,11 @@ header {
     color: #222;
 }
 
+header .intro-text img {
+    position: relative;
+    left: -10px;
+}
+
 header .intro-text .intro-lead-in {
     margin-top: 35px;
     margin-bottom: 25px;
