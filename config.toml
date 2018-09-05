@@ -142,7 +142,7 @@ defaultContentLanguageInSubdir = "false"
 					description = "Our expert staff are trained to provide local, trustworthy answers to library- and research-related questions."
 
 				[[languages.en.params.services.row.list]]
-					icon = "fa-language"
+					icon = "fa-comments"
 					title = "Bilingual service"
 					description = "Chat support is available in both English and French during all service hours."
 
