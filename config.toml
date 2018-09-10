@@ -1,6 +1,8 @@
 # Site settings
 #baseurl = "http://localhost/ask-public/public/"
-baseurl = "https://staticdev.scholarsportal.info/ask-public/"
+#baseurl = "https://staticdev.scholarsportal.info/ask-public/"
+#baseurl = "https://olrc.scholarsportal.info:8080/v1/AUTH_3cdec45db4c04935b752506d18805a5b/ask-public/"
+baseurl = "https://ask.scholarsportal.info/"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
 # Enter your tracking code to enable Google Analytics
@@ -27,6 +29,16 @@ defaultContentLanguageInSubdir = "false"
     custom_css = ["css/custom.css"]
     custom_js  = []
 	favicon    = "favicon.ico"
+
+	# Optional piwik tracking
+	#[params.analytics.piwik]
+	#  URL = "https://stats.example.com"
+	#  ID = "42"
+	#  # Track all subdomains with "*.example.com"
+	#  domain = "www.example.com"
+	#  # Optional integrity check hash
+	#  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
 
 	# Possibility to disable external/additional fonts
 	# Exception: Fontawesome
@@ -56,6 +68,9 @@ defaultContentLanguageInSubdir = "false"
 				["fa-facebook", "#"],
 				["fa-linkedin", "#"]
 			]
+
+	[params.contact.captcha]
+		#sitekey = ""
 
 [languages]
 
@@ -327,9 +342,7 @@ defaultContentLanguageInSubdir = "false"
 			title = "Contact us"
 			subtitle  = "Get In Touch!"
 			buttonText = "Send message"
-
-			[languages.en.params.contact.captcha]
-			#sitekey = ""
+			# netlify = true
 
 			# 'warning' defines error messages for invalid inputs
 			[languages.en.params.contact.form.name]
@@ -356,8 +369,8 @@ defaultContentLanguageInSubdir = "false"
 		secondcopyright = "Scholars Portal"
 		logo = "ocul.png"
 		secondlogo = "sp.png"
-		link = "http://ocul.on.ca"
-		secondlink = "http://scholarsportal.info/"
+		link = "https://ocul.on.ca"
+		secondlink = "https://scholarsportal.info/"
 
 			[[languages.en.params.footer.social]]
 				icon = "fa-twitter"
@@ -636,26 +649,24 @@ defaultContentLanguageInSubdir = "false"
 			title = "Nous contacter"
 			subtitle  = "Prenez contact !"
 			buttonText = "Envoyer"
-
-			[languages.fr.params.contact.captcha]
-			#sitekey = ""
+			# netlify = true
 
 			# 'warning' defines error messages for invalid inputs
 			[languages.fr.params.contact.form.name]
 				text = "Votre nom *"
-				warning = "Please enter your name."
+				warning = "Veuillez entrer votre nom."
 
 			[languages.fr.params.contact.form.email]
 				text = "Votre email *"
-				warning = "Please enter your email address."
+				warning = "Veuillez entrer votre addresse de courriel."
 
 			[languages.fr.params.contact.form.phone]
 				text = "Votre organization *"
-				warning = "Please enter your organization."
+				warning = "Veuillez entrer votre organisation."
 
 			[languages.fr.params.contact.form.message]
 				text = "Votre message *"
-				warning = "Please enter a message."
+				warning = "Veuillez entrer un message."
 
 
 		# Footer section
