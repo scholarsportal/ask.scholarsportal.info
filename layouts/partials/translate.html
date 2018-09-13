@@ -1,5 +1,0 @@
-{{ if .IsTranslated }}
-    {{ range .Translations }}
-        <a href="{{ .Permalink }}" class="lang-toggle">{{ .Site.Language.LanguageName }}{{ if .IsPage }}{{ end }}</a>
-    {{ end}}
-{{ end }}
