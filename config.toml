@@ -31,14 +31,13 @@ defaultContentLanguageInSubdir = "false"
 	favicon    = "favicon.ico"
 
 	# Optional piwik tracking
-	#[params.analytics.piwik]
-	#  URL = "https://stats.example.com"
-	#  ID = "42"
+	[params.analytics.piwik]
+	  URL = "https://analytics.scholarsportal.info"
+	  ID = "12"
 	#  # Track all subdomains with "*.example.com"
-	#  domain = "www.example.com"
+	#  domain = "www.ask.scholarsportal.info"
 	#  # Optional integrity check hash
 	#  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
-
 
 	# Possibility to disable external/additional fonts
 	# Exception: Fontawesome
