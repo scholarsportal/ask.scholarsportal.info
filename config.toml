@@ -164,7 +164,7 @@ defaultContentLanguageInSubdir = "false"
 		enable = true
 			title = "Features"
 			subtitle = ""
-			endpoint = "[<br>Contact Us!](#contact)"
+			# endpoint = "[<br>Contact Us!](#contact)"
 
 			# The events will be listed from the top to the bottom.
 			# All images are stored under 'static/img/about'.
@@ -336,7 +336,7 @@ defaultContentLanguageInSubdir = "false"
 
 		# Contact section
 		[languages.en.params.contact]
-		enable = true
+		enable = false
 			title = "Contact us"
 			subtitle  = "This form contacts the Ask a Librarian team at Scholars Portal.<br/> To chat with a librarian from your school, please look for the chat button on the library website."
 			buttonText = "Send message"
@@ -471,7 +471,7 @@ defaultContentLanguageInSubdir = "false"
 		enable = true
 			title = "Caractéristiques"
 			subtitle = ""
-			endpoint = "[<br>Contactez nous !](#contact)"
+			#endpoint = "[<br>Contactez nous !](#contact)"
 
 			# The events will be listed from the top to the bottom.
 			# All images are stored under 'static/img/about'.
@@ -643,7 +643,7 @@ defaultContentLanguageInSubdir = "false"
 
 		# Contact section
 		[languages.fr.params.contact]
-		enable = true
+		enable = false
 			title = "Nous contacter"
 			subtitle  = "Ce formulaire contacte l'équipe administrative de Clavardez avec nos bibliothécaires à Scholars Portal.<br/>Pour clavarder avec un bibliothécaire de votre école, veuillez rechercher le bouton de clavardage sur le site Web de la bibliothèque."
 			buttonText = "Envoyer"
