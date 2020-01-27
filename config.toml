@@ -294,14 +294,9 @@ defaultContentLanguageInSubdir = "false"
 				alt = "McMaster University"
 
 			[[languages.en.params.clients]]
-				logo = "OCAD.png"
-				link = "http://www.ocadu.ca/services/Library.htm"
-				alt = "OCAD University"
-
-			[[languages.en.params.clients]]
 				logo = "UOIT.png"
 				link = "https://uoit.ca/sites/library/"
-				alt = "University of Ontario Institute of Technology"
+				alt = "Ontario Tech University"
 
 			[[languages.en.params.clients]]
 				logo = "Ottawa.png"
@@ -601,14 +596,9 @@ defaultContentLanguageInSubdir = "false"
 				alt = "McMaster University"
 
 			[[languages.fr.params.clients]]
-				logo = "OCAD.png"
-				link = "http://www.ocadu.ca/services/Library.htm"
-				alt = "OCAD University"
-
-			[[languages.fr.params.clients]]
 				logo = "UOIT.png"
 				link = "https://uoit.ca/sites/library/"
-				alt = "University of Ontario Institute of Technology"
+				alt = "Ontario Tech University"
 
 			[[languages.fr.params.clients]]
 				logo = "Ottawa.png"
