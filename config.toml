@@ -9,6 +9,11 @@ googleAnalytics = ""
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = "false"
 
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
+
 [params]
 
 	# Since this template is static, the contact form uses www.formspree.io as a
