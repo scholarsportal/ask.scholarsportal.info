@@ -220,7 +220,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.en.params.faq.questions]]
 			question = "How can libraries join Ask a Librarian?"
-			answer = "Additional information about Ask a Librarian is available by [contacting us](#contact). Libraries interested in joining Ask a Librarian are invited to contact [ocul@ocul.on.ca](mailto:ocul@ocul.on.ca)."
+			answer = "Libraries interested in joining Ask a Librarian are invited to contact [ocul@ocul.on.ca](mailto:ocul@ocul.on.ca)."
 			id = "01"
 
 			[[languages.en.params.faq.questions]]
@@ -299,14 +299,24 @@ defaultContentLanguageInSubdir = "false"
 				alt = "McMaster University"
 
 			[[languages.en.params.clients]]
-				logo = "UOIT.png"
-				link = "https://uoit.ca/sites/library/"
+				logo = "OCAD.png"
+				link = "https://www.ocadu.ca/services/library"
+				alt = "Ontario College of Art and Design"
+
+			[[languages.en.params.clients]]
+				logo = "OnTech.png"
+				link = "https://ontariotechu.ca/sites/library/"
 				alt = "Ontario Tech University"
 
 			[[languages.en.params.clients]]
 				logo = "Ottawa.png"
 				link = "https://biblio.uottawa.ca/"
 				alt = "University of Ottawa"
+
+			[[languages.en.params.clients]]
+				logo = "Queens.png"
+				link = "https://library.queensu.ca/"
+				alt = "Queen's University"
 
 			[[languages.en.params.clients]]
 				logo = "Ryerson.png"
@@ -522,7 +532,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.fr.params.faq.questions]]
 			question = "Comment notre bibliothèque peut-elle rejoindre le service?"
-			answer = "Pour de plus amples renseignements sur le service Clavardez avec nos bibliothécaires, [contactez-nous](#contact). Pour savoir comment votre bibliothèque peut prendre part au service Clavardez avec nos bibliothécaires, veuillez communiquer avec nous à l’adresse suivante : [ocul@ocul.on.ca](mailto:ocul@ocul.on.ca)."
+			answer = "Pour savoir comment votre bibliothèque peut prendre part au service Clavardez avec nos bibliothécaires, veuillez communiquer avec nous à l’adresse suivante : [ocul@ocul.on.ca](mailto:ocul@ocul.on.ca)."
 			id = "01"
 
 			[[languages.fr.params.faq.questions]]
@@ -601,14 +611,24 @@ defaultContentLanguageInSubdir = "false"
 				alt = "McMaster University"
 
 			[[languages.fr.params.clients]]
-				logo = "UOIT.png"
-				link = "https://uoit.ca/sites/library/"
+				logo = "OCAD.png"
+				link = "https://www.ocadu.ca/services/library"
+				alt = "Ontario College of Art and Design"
+
+			[[languages.fr.params.clients]]
+				logo = "OnTech.png"
+				link = "https://ontariotechu.ca/sites/library/"
 				alt = "Ontario Tech University"
 
 			[[languages.fr.params.clients]]
 				logo = "Ottawa.png"
 				link = "https://biblio.uottawa.ca/"
 				alt = "Université d’Ottawa"
+
+			[[languages.fr.params.clients]]
+				logo = "Queens.png"
+				link = "https://library.queensu.ca/"
+				alt = "Queen's University"
 
 			[[languages.fr.params.clients]]
 				logo = "Ryerson.png"
