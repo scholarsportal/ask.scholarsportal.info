@@ -399,6 +399,10 @@ header .intro-text .intro-heading {
     }
 }
 
+.service-heading {
+    font-size: 18px;
+}
+
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     background: #ce4a22;
 }
@@ -409,6 +413,19 @@ header .intro-text .intro-heading {
 
 #portfolio .portfolio-item .portfolio-link img {
     height: 100%;
+}
+
+.portfolio-heading {
+    font-size: 18px;
+    text-transform: none;
+    margin: 0;
+}
+
+.timeline .timeline-heading h3.subheading {
+    text-transform: none;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .timeline>li .timeline-image {
@@ -469,6 +486,15 @@ td {
 
 section.clients img {
     margin: 50px auto;
+}
+
+section p.section-subheading {
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
 }
 
 section#contact {

@@ -126,7 +126,7 @@ defaultContentLanguageInSubdir = "false"
 			# the 'static/img' folder.
 			title = "Ask a Librarian"
 			subtitle = "Connecting users with research assistance through chat."
-			buttonText = "Tell me more"
+			buttonText = ""
 
 			[[languages.en.params.hero.logo]]
 				img = "logo_notext.png"
