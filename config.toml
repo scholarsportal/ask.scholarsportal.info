@@ -260,7 +260,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.en.params.clients]]
 				logo = "Algoma.jpg"
-				link = "http://library.algomau.ca/main/"
+				link = "https://library.algomau.ca"
 				alt = "Algoma University"
 
 			[[languages.en.params.clients]]
@@ -275,7 +275,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.en.params.clients]]
 				logo = "Guelph.jpg"
-				link = "http://www.lib.uoguelph.ca/"
+				link = "https://www.lib.uoguelph.ca/"
 				alt = "University of Guelph"
 
 			[[languages.en.params.clients]]
@@ -295,7 +295,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.en.params.clients]]
 				logo = "McMaster.jpg"
-				link = "http://library.mcmaster.ca/"
+				link = "https://library.mcmaster.ca/"
 				alt = "McMaster University"
 
 			[[languages.en.params.clients]]
@@ -320,7 +320,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.en.params.clients]]
 				logo = "Ryerson.png"
-				link = "http://library.ryerson.ca/"
+				link = "https://library.ryerson.ca/"
 				alt = "Ryerson University"
 
 			[[languages.en.params.clients]]
@@ -438,7 +438,7 @@ defaultContentLanguageInSubdir = "false"
 			# the 'static/img' folder.
 			title = "Clavardez avec nos bibliothécaires"
 			subtitle = "Reliant les usagers avec l’aide à la recherche via clavardage."
-			buttonText = "En savoir plus"
+			buttonText = ""
 
 			[[languages.fr.params.hero.logo]]
 				img = "logo_notext.png"
@@ -572,7 +572,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.fr.params.clients]]
 				logo = "Algoma.jpg"
-				link = "http://library.algomau.ca/main/"
+				link = "https://library.algomau.ca"
 				alt = "Algoma University"
 
 			[[languages.fr.params.clients]]
@@ -587,7 +587,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.fr.params.clients]]
 				logo = "Guelph.jpg"
-				link = "http://www.lib.uoguelph.ca/"
+				link = "https://www.lib.uoguelph.ca/"
 				alt = "University of Guelph"
 
 			[[languages.fr.params.clients]]
@@ -607,7 +607,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.fr.params.clients]]
 				logo = "McMaster.jpg"
-				link = "http://library.mcmaster.ca/"
+				link = "https://library.mcmaster.ca/"
 				alt = "McMaster University"
 
 			[[languages.fr.params.clients]]
@@ -632,7 +632,7 @@ defaultContentLanguageInSubdir = "false"
 
 			[[languages.fr.params.clients]]
 				logo = "Ryerson.png"
-				link = "http://library.ryerson.ca/"
+				link = "https://library.ryerson.ca/"
 				alt = "Ryerson University"
 
 			[[languages.fr.params.clients]]
@@ -690,7 +690,7 @@ defaultContentLanguageInSubdir = "false"
 		logo = "cbuo.png"
 		secondlogo = "sp.png"
 		link = "https://ocul.on.ca"
-		secondlink = "http://scholarsportal.info/"
+		secondlink = "https://scholarsportal.info/"
 
 			[[languages.fr.params.footer.social]]
 				icon = "fa-twitter"
