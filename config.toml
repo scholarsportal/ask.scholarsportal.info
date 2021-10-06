@@ -1,6 +1,4 @@
 # Site settings
-#baseurl = "http://localhost/ask-public/public/"
-#baseurl = "https://staticdev.scholarsportal.info/ask-public/"
 baseurl = "https://ask.scholarsportal.info/"
 languageCode = "en-us"
 theme = "hugo-agency-theme"
